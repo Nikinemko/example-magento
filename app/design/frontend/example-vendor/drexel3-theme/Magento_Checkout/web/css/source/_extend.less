@@ -1,0 +1,32 @@
+& when (@media-common = true) {
+
+  .minicart-wrapper {
+    margin-left: 0px !important;
+    .action {
+
+      &.showcart {
+        white-space: nowrap;
+
+        .modal-popup,
+        .text {
+          &:extend(.abs-visually-hidden all);
+          .lib-font-size(@font-size__s);
+          .lib-css(font-weight, @font-weight__light);
+          .lib-css(color, @color-exampleproject-primary);
+          position: relative;
+          text-transform: uppercase;
+          letter-spacing: 0;
+          vertical-align: middle;
+        }
+      }
+
+      &.showcart:before {
+        font-size: 0;
+      }
+
+      &.showcart.active:before {
+        font-size: 0;
+      }
+    }
+  }
+}
