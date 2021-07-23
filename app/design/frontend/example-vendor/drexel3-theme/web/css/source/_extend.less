@@ -14,3 +14,153 @@
   border: none;
 }
 
+// SLIDER BUTTONS //
+
+.bannerSliderButton {
+  display: flex;
+  position: absolute;
+  list-style-type: none;
+  justify-content: center;
+  right: 0;
+  left: 0;
+  top: 90%;
+  padding: 0px;
+  li button {
+    display: block;
+    text-indent: -99999px;
+    border: 2px solid black;
+    border-radius: 0px;
+    height: 10px;
+    width: 10px;
+    padding: 0px;
+    margin: 0px 10px 0px 0px;
+  }
+  .slick-active button {
+    background: #000;
+  }
+}
+
+.centring_category .bannerSliderButton {
+  top: 120%;
+}
+
+// SLICK SLIDER ARROWS //
+////////////////////////////////
+////////////////////////////////
+
+.slick-prev, .slick-next {
+  top: -80px;
+  font-size: 12px;
+  color: #222;
+}
+
+.slick-prev {
+  left: auto;
+  right: 63px;
+  border-right: 1px solid black;
+  border-radius: 0px;
+  width: 60px;
+  height: 20px;
+}
+
+.slick-next {
+  right: 45px;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #222;
+  content: none;
+}
+
+.slick-next:hover, .slick-next:focus {
+  background: transparent;
+  border: none;
+  color: #222;
+}
+
+.slick-prev:focus, .slick-prev:hover {
+  border: none;
+  border-right: 1px solid black;
+  color: #222;
+  background: transparent;
+}
+
+
+button.slick-prev {
+  visibility: hidden;
+}
+
+button.slick-prev::after {
+  visibility: visible;
+  position: absolute;
+  border-right: 1px solid black;
+  width: 50px;
+  padding: 10px 5px 0px 0px;
+  height: 10px;
+  top: 40px;
+  left: 0;
+  letter-spacing: 1px;
+  font-weight: 100;
+  content: "PREV";
+}
+
+button.slick-next {
+  visibility: hidden;
+}
+
+button.slick-next::after {
+  visibility: visible;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  padding-top: 10px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  width: 60px;
+  height: 10px;
+  content: "NEXT";
+}
+
+
+// SLICK SLIDER BUTTONS //
+
+
+//.myProductsSliderButton {
+//  position: absolute;
+//  display: flex;
+//  right: 0;
+//  top: -80px;
+//  li:first-child {
+//    border-right: 1px solid #222;
+//    height: 20px;
+//    button::after {
+//      visibility: visible;
+//      position: absolute;
+//      top: 0;
+//      left: 0;
+//      content: "PREV";
+//    }
+//  }
+//  li {
+//    margin-left: 15px;
+//    button {
+//      background: transparent;
+//      border: none;
+//      visibility: hidden;
+//      position: relative;
+//    }
+//    button::after {
+//      visibility: visible;
+//      position: absolute;
+//      top: 0;
+//      left: 0;
+//      content: "NEXT";
+//    }
+//  }
+//}
+
+
+
+
+
+
