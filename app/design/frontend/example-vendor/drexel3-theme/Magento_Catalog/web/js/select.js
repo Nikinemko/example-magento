@@ -8,7 +8,7 @@ define([
         $(function() {
             $('#sorter').select2(
                 {
-                    width: 'resolve',
+                    dropdownCssClass: "select-dropdown",
                     closeOnSelect: true,
                     minimumResultsForSearch: -1
                 }
