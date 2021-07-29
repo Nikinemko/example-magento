@@ -19,10 +19,10 @@ use Magento\Framework\App\Action\Action;
 $_productCollection = $block->getLoadedProductCollection();
 /** @var \Magento\Catalog\Helper\Output $_helper */
 $_helper = $block->getData('outputHelper');
-?>
-<?php
+
 $_imageHelper = $this->helper('Magento\Catalog\Helper\Image');
 $_imageHover = 'hover_product_list';
+
 ?>
 <?php if (!$_productCollection->count()): ?>
     <div class="message info empty">
@@ -49,7 +49,7 @@ $_imageHover = 'hover_product_list';
     $pos = $block->getPositioned();
     ?>
     <div class="products wrapper <?= /* @noEscape */ $viewMode ?> products-<?= /* @noEscape */ $viewMode ?>">
-        <ol class="products list items product-items">
+        <ol class="asdsa">
             <?php /** @var $_product \Magento\Catalog\Model\Product */ ?>
             <?php foreach ($_productCollection as $_product): ?>
                 <li class="item product product-item">

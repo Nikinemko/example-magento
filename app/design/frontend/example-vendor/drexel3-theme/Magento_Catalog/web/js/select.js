@@ -6,9 +6,8 @@ define([
     function($) {
         "use strict";
         $(function() {
-            $('#sorter').select2(
+            $("#sorter, .limiter-options").select2(
                 {
-                    dropdownCssClass: "select-dropdown",
                     closeOnSelect: true,
                     minimumResultsForSearch: -1
                 }
