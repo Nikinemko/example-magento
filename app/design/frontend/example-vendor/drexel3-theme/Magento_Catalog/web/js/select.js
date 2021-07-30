@@ -6,7 +6,7 @@ define([
     function($) {
         "use strict";
         $(function() {
-            $("#sorter, .limiter-options").select2(
+            $("#sorter").select2(
                 {
                     closeOnSelect: true,
                     minimumResultsForSearch: -1
