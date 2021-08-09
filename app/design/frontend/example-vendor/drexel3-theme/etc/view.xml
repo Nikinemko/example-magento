@@ -3,7 +3,7 @@
     <media>
         <images module="Magento_Catalog">
             <image id="hover_product_list" type="hover">
-                <width>240</width>
+                <width>260</width>
                 <height>300</height>
             </image>
         </images>

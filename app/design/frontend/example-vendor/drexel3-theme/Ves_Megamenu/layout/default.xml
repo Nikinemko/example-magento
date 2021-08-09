@@ -1,21 +1,7 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-
-        <!--<referenceContainer name="header.panel.wrapper" remove="true"/>-->
         <referenceContainer name="compare-link-wrapper" remove="true"/>
-
-        <!--<referenceContainer name="header-wrapper">-->
-            <!--<container name="header.left" label="headerLeft" htmlTag="div" htmlClass="left-header"/>-->
-            <!--<container name="header.center" label="headerCenter" htmlTag="div" htmlClass="center-header"/>-->
-            <!--<container name="header.right" label="headerRight" htmlTag="div" htmlClass="right-header">-->
-                <!--<block class="Magento\Framework\View\Element\Template" name="login" template="Magento_Cms::html/login.phtml"/>-->
-                <!--<block class="Magento\Framework\View\Element\Template" name="wishList" template="Magento_Cms::html/wishList.phtml"/>-->
-                <!--<block class="Magento\Framework\View\Element\Template" name="menuBar" after="-" template="Magento_Cms::html/menuBar.phtml"/>-->
-            <!--</container>-->
-        <!--</referenceContainer>-->
-        <!---->
-
         <referenceBlock name="catalog.topnav">
             <container name="header.left" label="headerLeft" htmlTag="div" htmlClass="left-header"/>
             <container name="header.right" label="headerRight" htmlTag="div" htmlClass="right-header">
@@ -26,7 +12,6 @@
         </referenceBlock>
 
         <move element="logo" destination="header.left"/>
-        <!--<move element="navigation.sections" destination="header.center"/>-->
         <move element="minicart" destination="header.right" after="wishList"/>
         <move element="top.search" destination="header.right" before="menuBar"/>
 

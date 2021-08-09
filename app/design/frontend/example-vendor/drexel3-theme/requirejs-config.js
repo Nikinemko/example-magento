@@ -7,4 +7,11 @@ var config = {
             deps: ['jquery']
         }
     },
+    config: {
+        mixins: {
+            'Mirasvit_Giftr/js/item': {
+                'js/item-mixin': true
+            }
+        }
+    }
 };
