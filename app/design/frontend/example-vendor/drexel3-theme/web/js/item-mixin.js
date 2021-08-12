@@ -7,11 +7,6 @@ define([
 ], function($, Component, _, customerData, $t) {
     'use strict';
     var mixin = ({
-        defineBehaviour: function(data, event) {
-            if (!this.isLoggedIn())
-                window.location.href = this.loginUrl;
-        },
-
         addProduct: function() {
             if (!$('#product_addtocart_form').valid()) {
                 return false;
@@ -30,6 +25,11 @@ define([
                     }
                 }
             });
+        },
+
+        defineBehaviour: function(data, event) {
+            if (!this.isLoggedIn())
+                window.location.href = this.loginUrl;
         },
     });
     return function (target) { // target == Result that Magento_Ui/.../columns returns.

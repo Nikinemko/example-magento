@@ -1,5 +1,6 @@
 var config = {
     paths: {
+        GiftrWindow: 'js/giftr-window',
         slick: 'js/slick.min'
     },
     shim: {

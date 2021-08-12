@@ -100,7 +100,7 @@ define([
 
             if (!this.isLoggedIn()) {
                 message = $t('Please') + ', <a href="' + this.loginUrl + '">'+ $t('log in') +
-                    '</a> ' + $t('  before adding products to registry');
+                    '</a> ' + $t('before adding products to registry');
             } else if (!this.hasRegistries()) {
                 message = $t('You have no Gift Registries yet.') +
                     ' <a href="' + this.newRegistryUrl + '">' + $t('Create Gift Registry') + '</a>';
