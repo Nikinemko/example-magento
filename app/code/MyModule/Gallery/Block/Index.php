@@ -1,5 +1,5 @@
 <?php
-namespace MyModule\FirstUnit\Block;
+namespace MyModule\Gallery\Block;
 class Index extends \Magento\Framework\View\Element\Template
 {
 
