@@ -5,7 +5,7 @@ body {
 .description {
   color: @color-exampleproject-secondary;
   position: relative;
-  padding: 5px 0px 25px;
+  padding: 5px 0 25px;
   margin-bottom: 25px;
 }
 
@@ -54,8 +54,13 @@ body {
   max-width: none;
 }
 .block-title {
-  margin: 80px 0px 30px;
+  margin: 80px 0 60px;
   font-size: 36px;
+}
+
+.container {
+  margin: auto;
+  width: 90%;
 }
 
 @media (min-width: 800px) {
@@ -145,14 +150,14 @@ body {
 }
 
 .footer-copyright {
-  padding: 40px 0px 0px 0px;
+  padding: 40px 0 0 0;
   border-top: 1px solid #eee;
 }
 
 .copyright {
   background-color: transparent;
   color: black;
-  padding: 0px;
+  padding: 0;
 }
 
 .copy-content {
@@ -193,6 +198,17 @@ body {
   .news-block {
     display: flex;
   }
+}
+
+.slick-initialized .slick-slide {
+  margin: 20px;
+}
+
+.banner-container {
+  .banner {
+    margin: 0;
+  }
+
 }
 
 

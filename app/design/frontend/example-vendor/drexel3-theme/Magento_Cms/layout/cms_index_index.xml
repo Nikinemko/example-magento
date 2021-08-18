@@ -6,5 +6,6 @@
         <block class="Magento\Framework\View\Element\Template" name="myProducts.slider" template="Magento_Cms::myProducts.phtml"/>
         <block class="Magento\Framework\View\Element\Template" name="brandSlider.slider" template="Magento_Cms::brandSlider.phtml"/>
         <block class="Magento\Framework\View\Element\Template" name="columnProducts.slider" template="Magento_Cms::columnProducts.phtml"/>
+        <block class="Magento\Framework\View\Element\Template" name="newsSlider.slider" template="Magento_Cms::newsSlider.phtml"/>
     </referenceContainer>
 </page>
