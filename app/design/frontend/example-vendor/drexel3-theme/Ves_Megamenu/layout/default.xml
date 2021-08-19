@@ -10,11 +10,15 @@
                 <block class="Magento\Framework\View\Element\Template" name="menuBar" after="-" template="Magento_Cms::html/menuBar.phtml"/>
             </container>
         </referenceBlock>
+        <referenceBlock name="top.links" remove="true"/>
 
-        <move element="logo" destination="header.left"/>
-        <move element="minicart" destination="header.right" after="wishList"/>
-        <move element="top.search" destination="header.right" before="menuBar"/>
+        <!--<move element="logo" destination="header.left"/>-->
+        <!--<move element="minicart" destination="header.right" after="wishList"/>-->
+        <!--<move element="top.search" destination="header.right" before="menuBar"/>-->
 
 
     </body>
 </page>
+
+
+        <!--catalog.topnav-->
