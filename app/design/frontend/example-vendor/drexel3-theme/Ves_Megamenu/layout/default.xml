@@ -1,24 +1,34 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceContainer name="compare-link-wrapper" remove="true"/>
-        <referenceBlock name="catalog.topnav">
-            <container name="header.left" label="headerLeft" htmlTag="div" htmlClass="left-header"/>
-            <container name="header.right" label="headerRight" htmlTag="div" htmlClass="right-header">
-                <block class="Magento\Framework\View\Element\Template" name="login" template="Magento_Cms::html/login.phtml"/>
+        <referenceContainer name="header-wrapper">
+            <container name="logo.wrapper" htmlTag="div" htmlClass="logo-wrapper" />
+            <container name="menu.wrapper" htmlTag="div" htmlClass="menu-wrapper"/>
+            <container name="navigation.wrapper" htmlTag="div" htmlClass="navigation-wrapper">
+                <block class="Magento\Framework\View\Element\Template" name="close.menu" template="Magento_Cms::html/close.phtml"/>
+            </container>
+            <container name="side.wrapper" htmlTag="div" htmlClass="side-wrapper">
+            <block class="Magento\Framework\View\Element\Template" name="login" template="Magento_Cms::html/login.phtml"/>
                 <block class="Magento\Framework\View\Element\Template" name="wishList" template="Magento_Cms::html/wishList.phtml"/>
                 <block class="Magento\Framework\View\Element\Template" name="menuBar" after="-" template="Magento_Cms::html/menuBar.phtml"/>
             </container>
-        </referenceBlock>
-        <referenceBlock name="top.links" remove="true"/>
+        </referenceContainer>
 
-        <!--<move element="logo" destination="header.left"/>-->
-        <!--<move element="minicart" destination="header.right" after="wishList"/>-->
-        <!--<move element="top.search" destination="header.right" before="menuBar"/>-->
+
+<!--REMOVE  /////////////////////////-->
+
+        <referenceContainer name="compare-link-wrapper" remove="true"/>
+        <referenceBlock name="header.panel.wrapper" remove="true" />
+
+
+<!--MOVE //////////////////////////// -->
+
+        <move element="logo" destination="logo.wrapper"/>
+        <move element="navigation.sections" destination="navigation.wrapper" before="-"/>
+        <move element="close.menu" destination="navigation.sections" before="-"/>
+        <move element="minicart" destination="side.wrapper" after="wishList"/>
+        <move element="top.search" destination="side.wrapper" before="menuBar"/>
 
 
     </body>
 </page>
-
-
-        <!--catalog.topnav-->
