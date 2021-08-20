@@ -5,7 +5,7 @@
             <container name="logo.wrapper" htmlTag="div" htmlClass="logo-wrapper" />
             <container name="menu.wrapper" htmlTag="div" htmlClass="menu-wrapper"/>
             <container name="navigation.wrapper" htmlTag="div" htmlClass="navigation-wrapper">
-                <block class="Magento\Framework\View\Element\Template" name="close.menu" template="Magento_Cms::html/close.phtml"/>
+                <!--<block class="Magento\Framework\View\Element\Template" name="close.menu" template="Magento_Cms::html/close.phtml"/>-->
             </container>
             <container name="side.wrapper" htmlTag="div" htmlClass="side-wrapper">
             <block class="Magento\Framework\View\Element\Template" name="login" template="Magento_Cms::html/login.phtml"/>
@@ -25,7 +25,7 @@
 
         <move element="logo" destination="logo.wrapper"/>
         <move element="navigation.sections" destination="navigation.wrapper" before="-"/>
-        <move element="close.menu" destination="navigation.sections" before="-"/>
+        <!--<move element="close.menu" destination="navigation.sections"/>-->
         <move element="minicart" destination="side.wrapper" after="wishList"/>
         <move element="top.search" destination="side.wrapper" before="menuBar"/>
 

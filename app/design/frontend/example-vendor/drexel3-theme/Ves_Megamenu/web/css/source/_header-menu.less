@@ -1,3 +1,5 @@
+////////////////////////           TABLET
+
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
 
   .submenu.dropdown-menu {
@@ -24,6 +26,8 @@
   }
 
 }
+
+/////////////////////////////////// DESKTOP
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
 
@@ -206,6 +210,41 @@
 // MOBILE VERSION
 
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+  .nav-sections {
+    width: 100%;
+    left: -100%;
+  }
+
+  #close-menu {
+    padding-top: 10px;
+    margin-bottom: 15px;
+    text-align: right;
+  }
+
+  #close-menu a i.fa-angle-left {
+    right: 20px;
+    position: absolute;
+  }
+
+  #close-menu a i.fa-angle-right {
+    position: absolute;
+    right: 25px;
+  }
+
+  #close-menu a i {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .ves-megamenu > .navigation .nav-item > a {
+    color: #ddd !important;
+    border-bottom: 1px solid rgba(214,210,210,0.1);
+  }
+
+  .navigation li.level0:last-child {
+    border-bottom: none !important;
+  }
 
   .item-header {
     display: none;
