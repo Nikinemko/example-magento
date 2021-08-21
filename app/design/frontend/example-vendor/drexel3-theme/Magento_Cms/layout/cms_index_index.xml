@@ -8,4 +8,7 @@
         <block class="Magento\Framework\View\Element\Template" name="columnProducts.slider" template="Magento_Cms::columnProducts.phtml"/>
         <block class="Magento\Framework\View\Element\Template" name="newsSlider.slider" template="Magento_Cms::newsSlider.phtml"/>
     </referenceContainer>
+    <referenceContainer name="footer-container">
+        <block class="Magento\Framework\View\Element\Template" name="footer.mobile" template="Magento_Cms::footerMobile.phtml"/>
+    </referenceContainer>
 </page>

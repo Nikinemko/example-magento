@@ -1,7 +1,8 @@
 var config = {
     paths: {
         GiftrWindow: 'js/giftr-window',
-        slick: 'js/slick.min'
+        slick: 'js/slick.min',
+        footerShow: 'js/footer-show'
     },
     shim: {
         slick: {

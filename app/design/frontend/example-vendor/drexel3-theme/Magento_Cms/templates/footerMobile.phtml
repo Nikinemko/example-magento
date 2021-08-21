@@ -1,0 +1,27 @@
+<script>
+    require([
+        'jquery'
+    ], function ($) {
+        'use strict';
+        $( document ).ready(function() {
+                const footerSection = $('.footer-section');
+                const clickElem = footerSection.find(".extend-footer");
+
+                clickElem.click(function(){
+                    $(this).parent().next().slideToggle();
+                });
+        });
+
+    });
+</script>
+
+
+<!--<script type="text/x-magento-init">-->
+<!---->
+<!--{-->
+<!--    "*": {-->
+<!--        "footerShow": {}-->
+<!--    }-->
+<!--}-->
+<!---->
+<!--</script>-->
