@@ -30,6 +30,21 @@
 /////////////////////////////////// DESKTOP
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+  
+  .fixed {
+    position: fixed;
+    z-index: 999999;
+    background: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+    padding: 20px 15px 30px 0;
+    transition: 0.6s;
+    width: 100%;
+  }
+
+  .page-header {
+    padding: 40px 0;
+    border-bottom: none;
+  }
 
   .submenu.dropdown-menu {
     width: 900px;
@@ -163,6 +178,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
+    align-items: center;
     .logo-wrapper {
       flex: 1;
     }
@@ -204,6 +220,7 @@
 
   .nav-sections {
     background: 0 0;
+    margin-bottom: 0;
   }
 }
 

@@ -553,9 +553,14 @@ if ($menu = $this->getMenu()) {
 
 									/* STICKY MENY */
 									<?php if($menu->getData('scrolltofixed')){ ?>
-										$('.page-header').scrollToFixed({
-											zIndex: 999
-										});
+                        $(window).scroll(function () {
+                            if ($(this).scrollTop() > $('.page-header').outerHeight() && $(this).width() >=768) {
+                                $('.page-header').addClass('fixed');
+                            }
+                            if ($(this).scrollTop() === 0 ){
+                                $('.page-header').removeClass('fixed');
+                            }
+                        });
 									<?php } ?>
 
 									var mobileDrill, desktopDrill;
