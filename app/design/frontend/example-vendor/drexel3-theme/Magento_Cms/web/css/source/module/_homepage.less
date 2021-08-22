@@ -13,7 +13,7 @@ body {
   content: "";
   width: 25px;
   height: 3px;
-  background: #222;
+  .lib-css(background, @color-exampleproject-softBlack);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -37,7 +37,7 @@ body {
     width: 49%;
   }
   .centring_category {
-    display: flex;
+    .lib-vendor-prefix-display(flex);
     margin-bottom: 88px;
     justify-content: space-between;
   }
@@ -92,24 +92,16 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
 //footer
 
 .page-footer {
-  background: #fff;
+  .lib-css(background, @color-exampleproject-light);
   .footer.content {
     .links {
       display: block;
       padding-right: 0px;
       a {
-        color: #222222;
+        .lib-css(color, @color-exampleproject-softBlack);
         padding: 5px;
       }
     }
@@ -125,19 +117,19 @@ body {
           outline: 0;
           letter-spacing: .25px;
           overflow: hidden;
-          display: block;
+          .lib-vendor-prefix-display(block);
           color: #888 !important;
         }
         .title {
-          display: flex;
+          .lib-vendor-prefix-display(flex);
           justify-content: space-between;
           font-size: 16px;
           padding-bottom: 0;
-          letter-spacing: 1px;
+          letter-spacing: @exampleproject-letter-spacing;
           text-transform: uppercase;
           font-weight: 500;
           line-height: 1;
-          color: #222;
+          .lib-css(color, @color-exampleproject-softBlack);
         }
       }
     }
@@ -145,7 +137,7 @@ body {
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
   .footer-links {
-    display: flex;
+    .lib-vendor-prefix-display(flex);
   }
 }
 
@@ -156,7 +148,7 @@ body {
 
 .copyright {
   background-color: transparent;
-  color: black;
+  .lib-css(color, @color-exampleproject-primary);
   padding: 0;
 }
 
@@ -165,13 +157,13 @@ body {
     list-style-type: none;
     text-align: center;
     >li{
-      margin: 0px 20px 0px 0px;
+      margin: 0 20px 0 0;
       color: #888;
       letter-spacing: 1px;
     }
   }
   .copy-links {
-    margin: 0px 20px 0px 0px;
+    margin: 0 20px 0 0;
     color: #888;
     letter-spacing: 1px;
     text-align: center;
@@ -181,12 +173,12 @@ body {
 @media screen and (min-width: 530px) {
   .copy-content {
     >ul {
-      display: flex;
+      .lib-vendor-prefix-display(flex);
     }
-    display:flex;
+    .lib-vendor-prefix-display(flex);
     justify-content: space-between;
     .copy-links {
-      display: flex;
+      .lib-vendor-prefix-display(flex);
     }
   }
 }
@@ -196,7 +188,7 @@ body {
 }
 @media screen and (min-width: 430px) {
   .news-block {
-    display: flex;
+    .lib-vendor-prefix-display(flex);
   }
 }
 

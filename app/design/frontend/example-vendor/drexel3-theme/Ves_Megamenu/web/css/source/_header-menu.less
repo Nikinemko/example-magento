@@ -8,14 +8,14 @@
   }
 
   .content-wrapper {
-    display: flex;
+    .lib-vendor-prefix-display(flex);
     .item-content {
       flex: 1;
     }
     .item-sidebar {
       flex: 1;
       > p {
-        display: flex;
+        .lib-vendor-prefix-display(flex);
         justify-content: center;
       }
       > p img {
@@ -59,46 +59,46 @@
   }
 
   .content-wrapper {
-    display: flex;
+    .lib-vendor-prefix-display(flex);
     .item-content {
       flex: 1;
     }
     .item-sidebar {
       flex: 1;
       > p {
-        display: flex;
+        .lib-vendor-prefix-display(flex);
         justify-content: center;
       }
     }
   }
 
   .level1 > .item-content2.hidden-lg.hidden-md {
-    display: flex;
+    .lib-vendor-prefix-display(flex);
     justify-content: center;
   }
 
   .fa-eyedropper:before {
-    background: white;
+    .lib-css(background, @color-exampleproject-light);
     border-radius: 40px;
-    color: #000;
+    .lib-css(color, @color-exampleproject-primary);
     padding: 15px;
     font-size: 20px;
     content: @icon-pin;
   }
 
   .fa-gear:before, .fa-cog:before {
-    background: white;
+    .lib-css(background, @color-exampleproject-light);
     border-radius: 40px;
-    color: #000;
+    .lib-css(color, @color-exampleproject-primary);
     padding: 15px;
     font-size: 20px;
     content: @icon-screw;
   }
 
   .fa-expand:before {
-    background: white;
+    .lib-css(background, @color-exampleproject-light);
     border-radius: 40px;
-    color: #000;
+    .lib-css(color, @color-exampleproject-primary);
     padding: 15px;
     font-size: 20px;
     content: @icon-scale;
@@ -108,19 +108,19 @@
 
   .media-body {
     width: 33.3%;
-    display: flex;
+    .lib-vendor-prefix-display(flex);
     align-items: center;
   }
 
   .description-media {
-    color: #777777;
+    .lib-css(color, @color-exampleproject-secondary);
     position: relative;
   }
 
   ///////////////////////////////////////
 
   .mega-col.mega-col-3.mega-col-level-1.col-xs-12 {
-    display: flex;
+    .lib-vendor-prefix-display(flex);
   }
 
   a.nav-anchor.subitems-group {
@@ -128,23 +128,23 @@
   }
 
   .custom-login {
-    color: #000 !important;
-    font-size: 12px;
+    .lib-css(color, @color-exampleproject-primary) !important;
+    font-size: @exampleproject-font-size;
     font-weight: 300;
   }
 
   .top-block-menu {
-    color: #fff;
+    .lib-css(color, @color-exampleproject-light);
   }
 
   .header-menu {
-    color: #fff;
-    display: flex;
+    .lib-css(color, @color-exampleproject-light);
+    .lib-vendor-prefix-display(flex);
     justify-content: space-between;
   }
 
   .menu-row {
-    display: flex;
+    .lib-vendor-prefix-display(flex);
     justify-content: space-between;
     color: #ddd;
   }
@@ -158,7 +158,7 @@
     font-weight: 500;
     line-height: 1;
     color: #ddd !important;
-    background: #222;
+    .lib-css(background, @color-exampleproject-softBlack);
   }
 
   .menu-title:hover {
@@ -167,7 +167,7 @@
 
   .navigation .level0 .submenu a {
     color: #ddd !important;
-    background: #222;
+    .lib-css(background, @color-exampleproject-softBlack);
   }
 
   .navigation .level0 .submenu a:hover {
@@ -175,7 +175,7 @@
   }
 
   .header.content {
-    display: flex;
+    .lib-vendor-prefix-display(flex);
     justify-content: space-between;
     padding: 0;
     align-items: center;
@@ -207,7 +207,7 @@
   }
 
   .fa {
-    color: #000;
+    .lib-css(color, @color-exampleproject-primary);
   }
 
   .scroll-to-fixed-fixed{
@@ -283,7 +283,7 @@
     top: 90px;
   }
   .nav-toggle::before {
-    color: #000;
+    .lib-css(color, @color-exampleproject-primary);
   }
 
   .logo-wrapper {
@@ -299,10 +299,10 @@
 
   .side-wrapper {
     margin-top: 20px;
-    display: flex;
+    .lib-vendor-prefix-display(flex);
     justify-content: flex-end;
       > div, a {
-        color: #000;
+        .lib-css(color, @color-exampleproject-primary);
         margin: 5px;
       }
     .custom-login {
@@ -343,11 +343,11 @@
   }
 
   .nav-sections {
-    background: #222;
+    .lib-css(background, @color-exampleproject-softBlack);
   }
 
   .ves-megamenu>.navigation {
-    background: #222 !important;
+    .lib-css(background, @color-exampleproject-softBlack) !important;
     float: left;
     width: 100%;
     .nav-item>a {
