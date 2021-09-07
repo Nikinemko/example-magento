@@ -1,47 +1,50 @@
 .product-item-info {position: relative;}
 .product-item-info:hover .product-item-photo-hovered {opacity:1;z-index: 1;visibility: visible;}
 .product-item-photo-hovered {position: absolute;top: 0;left: 0;visibility: hidden;opacity: 0;transition: 0.6s;}
+& when (@media-common = true) {
 
-.preview:before {
-  .lib-css(color, @color-exampleproject-softBlack) !important;
-  font-family: 'FontAwesome' !important;
-  content: @icon-preview;
-}
+  .preview:before {
+    .lib-css(color, @color-exampleproject-softBlack) !important;
+    font-family: 'FontAwesome' !important;
+    content: @icon-preview;
+  }
 
-.wishlist:before {
-  .lib-css(color, @color-exampleproject-softBlack) !important;
-  font-family: 'FontAwesome' !important;
-  content: @icon-wishlist-product;
-}
+  .wishlist:before {
+    .lib-css(color, @color-exampleproject-softBlack) !important;
+    font-family: 'FontAwesome' !important;
+    content: @icon-wishlist-product;
+  }
 
-.compare:before {
-  .lib-css(color, @color-exampleproject-softBlack) !important;
-  font-family: 'FontAwesome' !important;
-  content: @icon-compare-product;
-}
+  .compare:before {
+    .lib-css(color, @color-exampleproject-softBlack) !important;
+    font-family: 'FontAwesome' !important;
+    content: @icon-compare-product;
+  }
 
-.product-btn {
-  position: absolute;
-  left: 25%;
-}
+  .product-btn {
+    position: absolute;
+    left: 25%;
+  }
 
-.product-btn-borders {
-  background: 0 0;
-  .lib-css(color, @color-exampleproject-softBlack);
-  border-bottom: 1px solid black !important;
-  border: none;
-  border-radius: 0px;
-  text-transform: uppercase;
-}
-.product-btn-borders:hover {
-  background: 0 0;
-  border: 0;
-}
+  .product-btn-borders {
+    background: 0 0;
+    .lib-css(color, @color-exampleproject-softBlack);
+    border-bottom: 1px solid black !important;
+    border: none;
+    border-radius: 0px;
+    text-transform: uppercase;
+  }
 
-.product-item-details {
-  text-align: center;
-}
+  .product-btn-borders:hover {
+    background: 0 0;
+    border: 0;
+  }
 
-.products-row .product-item-info:hover .price-box {
-  display: none !important;
+  .product-item-details {
+    text-align: center;
+  }
+
+  .products-row .product-item-info:hover .price-box {
+    display: none !important;
+  }
 }

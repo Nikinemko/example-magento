@@ -1,58 +1,61 @@
+& when (@media-common = true) {
+  .toolbar-products {
+    display: flex;
+    align-items: center;
+  }
 
-.toolbar-products {
-  display: flex;
-  align-items: center;
-}
+  .toolbar-amount {
+    order: 3;
+    position: absolute !important;
+    left: auto;
+    right: 30px;
+    border-bottom: 1px solid #888;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: @color-exampleproject-softBlack;
+  }
 
-.toolbar-amount {
-  order: 3;
-  position: absolute !important;
-  left: auto;
-  right: 30px;
-  border-bottom: 1px solid #888;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 14px;
-  color: @color-exampleproject-softBlack;
-}
+  .select2-selection__rendered {
+    font-size: 13px;
+    border-color: #eee;
+  }
 
-.select2-selection__rendered {
-  font-size: 13px;
-  border-color: #eee;
-}
+  .select2-container--default .select2-selection--single {
+    font-size: 13px;
+    border-color: #c2c2c2 !important;
+    border-radius: 0 !important;
+  }
 
-.select2-container--default .select2-selection--single {
-  font-size: 13px;
-  border-color: #c2c2c2 !important;
-  border-radius: 0 !important;
-}
-.select2-container--default .select2-selection--single .select2-selection__rendered {
-  color: #888 !important;
-  line-height: 28px;
-  font-size: 13px;
-}
-.modes {
-  margin-right: 10px;
-}
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #888 !important;
+    line-height: 28px;
+    font-size: 13px;
+  }
 
-.modes-label + .modes-mode {
-  border-radius: 0;
-  margin-right: 10px;
-}
+  .modes {
+    margin-right: 10px;
+  }
 
-.modes-mode:last-child {
-  border-radius: 0;
-}
+  .modes-label + .modes-mode {
+    border-radius: 0;
+    margin-right: 10px;
+  }
 
-.select2-results__option {
-  padding: 0 !important;
-}
+  .modes-mode:last-child {
+    border-radius: 0;
+  }
 
-.select2-results__option--selectable {
-  cursor: auto;
-}
+  .select2-results__option {
+    padding: 0 !important;
+  }
 
-ul > li, ol > li {
-  margin-bottom: 0;
+  .select2-results__option--selectable {
+    cursor: auto;
+  }
+
+  ul > li, ol > li {
+    margin-bottom: 0;
+  }
 }
 

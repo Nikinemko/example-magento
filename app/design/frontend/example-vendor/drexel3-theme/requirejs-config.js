@@ -1,6 +1,6 @@
 var config = {
     paths: {
-        GiftrWindow: 'js/giftr-window',
+        GiftrWindow: 'Mirasvit_Giftr/js/giftr-window',
         slick: 'js/slick.min',
         footerShow: 'js/footer-show'
     },
@@ -12,7 +12,7 @@ var config = {
     config: {
         mixins: {
             'Mirasvit_Giftr/js/item': {
-                'js/item-mixin': true
+                'Mirasvit_Giftr/js/item-mixin': true
             }
         }
     }

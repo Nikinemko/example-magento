@@ -38,11 +38,12 @@ define([
         },
 
         defineBehaviour: function(data, event) {
-            if (!this.isLoggedIn())
+            if (!this.isLoggedIn()) {
                 window.location.href = this.loginUrl;
+            }
             this.initRegistries();
 
-            if (this.registries().length === 1) {
+            if (this.registries().length <= 1) {
                 event.stopPropagation();
                 this.addProduct();
             }

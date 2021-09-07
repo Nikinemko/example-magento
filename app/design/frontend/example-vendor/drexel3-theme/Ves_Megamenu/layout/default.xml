@@ -8,7 +8,7 @@
                 <!--<block class="Magento\Framework\View\Element\Template" name="close.menu" template="Magento_Cms::html/close.phtml"/>-->
             </container>
             <container name="side.wrapper" htmlTag="div" htmlClass="side-wrapper">
-            <block class="Magento\Framework\View\Element\Template" name="login" template="Magento_Cms::html/login.phtml"/>
+                <block class="Magento\Framework\View\Element\Template" name="login" template="Magento_Cms::html/login.phtml"/>
                 <block class="Magento\Framework\View\Element\Template" name="wishList" template="Magento_Cms::html/wishList.phtml"/>
                 <block class="Magento\Framework\View\Element\Template" name="menuBar" after="-" template="Magento_Cms::html/menuBar.phtml"/>
             </container>
@@ -18,7 +18,7 @@
 <!--REMOVE  /////////////////////////-->
 
         <referenceContainer name="compare-link-wrapper" remove="true"/>
-        <referenceBlock name="header.panel.wrapper" remove="true" />
+        <!--<referenceBlock name="header.panel.wrapper" remove="true" />-->
 
 
 <!--MOVE //////////////////////////// -->
