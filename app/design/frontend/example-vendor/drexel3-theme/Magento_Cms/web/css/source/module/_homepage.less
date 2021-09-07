@@ -2,34 +2,36 @@ body {
   color: @color-exampleproject-primary
 }
 
-.description {
-  color: @color-exampleproject-secondary;
-  position: relative;
-  padding: 5px 0 25px;
-  margin-bottom: 25px;
-}
+& when (@media-common = true) {
 
-.description::after{
-  content: "";
-  width: 25px;
-  height: 3px;
-  .lib-css(background, @color-exampleproject-softBlack);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
+  .description {
+    color: @color-exampleproject-secondary;
+    position: relative;
+    padding: 5px 0 25px;
+    margin-bottom: 25px;
+  }
 
-.text-description {
-  color: @color-exampleproject-secondary;
-  letter-spacing: .25px;
-  margin-top: 10px;
-}
+  .description::after {
+    content: "";
+    width: 25px;
+    height: 3px;
+    .lib-css(background, @color-exampleproject-softBlack);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 
-.banner {
-  width: 100%;
-  margin-bottom: 15px;
-}
+  .text-description {
+    color: @color-exampleproject-secondary;
+    letter-spacing: .25px;
+    margin-top: 10px;
+  }
 
+  .banner {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
 
 
 @media screen and (min-width: 768px) {

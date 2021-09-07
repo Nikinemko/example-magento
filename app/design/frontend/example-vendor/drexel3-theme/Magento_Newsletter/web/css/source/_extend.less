@@ -1,54 +1,64 @@
-.blocks.newsletter{
-  background: #f4f4f4;
-  padding: 30px 0;
-  .container.subscription-container{
-    .content {
-      align-self: center;
-      .form.subscribe {
-        margin: 20px;
-        .field.newsletter {
-          .control {
-            padding: 0 2px 0 0;
-            .newsletter input[type=email], input[name=email] {
-              background: 0 0;
-              border: 1px solid #ddd;
-              color: #888;
-              height: 50px;
-              }
-          }
-        }
-      }
-    }
-    .title h2 {
-      margin-bottom: 5px;
-      letter-spacing: 2px;
-    }
-    .title {
-      .label {
-        color: #888;
-        font-size: 14px;
-      }
-    }
-    }
-}
+& when (@media-common = true) {
+  .blocks.newsletter {
+    background: #f4f4f4;
+    padding: 30px 0;
 
-@media screen and (min-width: 590px) {
-  .blocks.newsletter{
-    .container.subscription-container{
-      .lib-vendor-prefix-display(flex);
-      justify-content: space-between;
+    .container.subscription-container {
+      .content {
+        align-self: center;
+
+        .form.subscribe {
+          margin: 20px;
+
+          .field.newsletter {
+            .control {
+              padding: 0 2px 0 0;
+
               .newsletter input[type=email], input[name=email] {
                 background: 0 0;
                 border: 1px solid #ddd;
                 color: #888;
                 height: 50px;
-                width: 20em;
               }
-    }
-    .content {
-      .form.subscribe{
-        .lib-vendor-prefix-display(flex);
+            }
+          }
+        }
+      }
+
+      .title h2 {
+        margin-bottom: 5px;
+        letter-spacing: 2px;
+      }
+
+      .title {
+        .label {
+          color: #888;
+          font-size: 14px;
+        }
       }
     }
   }
 }
+
+  @media screen and (min-width: 590px) {
+    .blocks.newsletter {
+      .container.subscription-container {
+        .lib-vendor-prefix-display(flex);
+        justify-content: space-between;
+
+        .newsletter input[type=email], input[name=email] {
+          background: 0 0;
+          border: 1px solid #ddd;
+          color: #888;
+          height: 50px;
+          width: 20em;
+        }
+      }
+
+      .content {
+        .form.subscribe {
+          .lib-vendor-prefix-display(flex);
+        }
+      }
+    }
+  }
