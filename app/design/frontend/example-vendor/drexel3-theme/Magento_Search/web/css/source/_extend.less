@@ -1,8 +1,9 @@
+
+
 & when (@media-common = true) {
   .form-under {
     min-width: 300px;
     height: @indent__xl;
-    margin-top: @indent__base;
     line-height: 43px;
     position: absolute;
     right: 7%;
@@ -42,22 +43,28 @@
       position: inherit;
     }
 
-    .block-search .control {
-      border-top: none;
-      clear: both;
-      margin: 0 -15px 0;
-      padding: 0 15px;
-    }
+}
 
-    .form-under {
-      margin-top: 10px;
-    }
-
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+  .form-under {
+    margin-top: @indent__base;
+  }
 }
 
 ///   mobile search
 
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+  .block-search .control {
+    border-top: none;
+    clear: both;
+    margin: 0 -15px 0;
+    padding: 0 15px;
+  }
+
+  .form-under {
+    margin-top: 10px;
+  }
 
   .block-search .action.search span {
     display: none;
