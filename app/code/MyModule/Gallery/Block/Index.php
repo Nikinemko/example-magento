@@ -1,6 +1,0 @@
-<?php
-namespace MyModule\Gallery\Block;
-class Index extends \Magento\Framework\View\Element\Template
-{
-
-}

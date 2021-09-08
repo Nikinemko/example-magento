@@ -21979,7 +21979,7 @@ function $$CookieReaderProvider() {
  *
  * ```js
  *   // Filter registration
- *   function MyModule($provide, $filterProvider) {
+ *   functionMyModule($provide, $filterProvider) {
  *     // create a service to demonstrate injection (not always needed)
  *     $provide.value('greet', function(name){
  *       return 'Hello ' + name + '!';
