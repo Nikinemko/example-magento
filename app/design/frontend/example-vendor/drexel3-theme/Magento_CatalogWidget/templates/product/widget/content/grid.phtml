@@ -4,6 +4,9 @@ use Magento\Framework\App\Action\Action;
 
 /** @var \Magento\CatalogWidget\Block\Product\ProductsList $block */
 ?>
+
+<!-- Added hovered image-->
+
 <?php if ($exist = ($block->getProductCollection() && $block->getProductCollection()->getSize())) : ?>
     <?php
     $type = 'widget-product-grid';
@@ -14,7 +17,7 @@ use Magento\Framework\App\Action\Action;
     $items = $block->getProductCollection()->getItems();
 
 
-    $_imageHelper = $this->helper('Magento\Catalog\Helper\Image');
+    $_imageHelper = $this->helper('Magento\Catalog\Helper\Image');          // added new variables
     $_imageHover = 'hover_product_list';
 
     $showWishlist = true;

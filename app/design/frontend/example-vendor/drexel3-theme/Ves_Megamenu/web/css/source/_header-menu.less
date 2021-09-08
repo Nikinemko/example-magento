@@ -1,10 +1,21 @@
 ////////////////////////           TABLET
 
+@media only screen
+and (max-width: 992px) {
+  .level1 > .item-content2.hidden-lg.hidden-md {
+    display: block;
+  }
+
+  .arm-chair .level1 > .item-content2.hidden-lg.hidden-md {
+    display: flex;
+  }
+}
+
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
 
   .arm-chair > .submenu.dropdown-menu {
-    width: 1320px;
-    left: -425px !important;        //      overrides default position to create adaptive header drop-downs
+    width: 1185px;
+    left: -395px !important;       //      overrides default position to create adaptive header drop-downs
   }
 
   .content-wrapper {
@@ -318,7 +329,7 @@
       content: @icon-login;
       font-family: @font-family-font-awesome;
       position: absolute;
-      margin: 0 0 0 -15px;
+      margin: 0 0 0 -10px;
     }
     .minicart-wrapper .action.showcart {
       .lib-vendor-prefix-display(initial);
