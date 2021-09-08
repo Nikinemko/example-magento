@@ -6,40 +6,40 @@
 
   .toolbar-amount {
     order: 3;
-    position: absolute !important;
+    position: absolute !important;  //    overrides relative position of 'amount of items'
     left: auto;
-    right: 30px;
+    right: @indent__l;
     border-bottom: 1px solid #888;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: 14px;
+    .lib-font-size(14);
     color: @color-exampleproject-softBlack;
   }
 
   .select2-selection__rendered {
-    font-size: 13px;
+    .lib-font-size(13);
     border-color: #eee;
   }
 
   .select2-container--default .select2-selection--single {
-    font-size: 13px;
+    .lib-font-size(13);
     border-color: #c2c2c2 !important;
-    border-radius: 0 !important;
+    border-radius: 0 !important;          // select2 features overrides according to my theme style and colors
   }
 
   .select2-container--default .select2-selection--single .select2-selection__rendered {
-    color: #888 !important;
+    color: #888 !important;               // select2 features overrides according to my theme style and colors
     line-height: 28px;
-    font-size: 13px;
+    .lib-font-size(13);
   }
 
   .modes {
-    margin-right: 10px;
+    margin-right: @indent__s;
   }
 
   .modes-label + .modes-mode {
     border-radius: 0;
-    margin-right: 10px;
+    margin-right: @indent__s;
   }
 
   .modes-mode:last-child {
@@ -47,7 +47,7 @@
   }
 
   .select2-results__option {
-    padding: 0 !important;
+    padding: 0 !important;              // select2 features overrides according to my theme style and colors
   }
 
   .select2-results__option--selectable {

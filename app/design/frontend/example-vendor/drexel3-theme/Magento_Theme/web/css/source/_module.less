@@ -70,7 +70,7 @@
     }
 
     .page-main {
-        margin-top: 20px !important;
+        margin-top: 20px !important;        // Adding additional space between header and main content
         .lib-vendor-prefix-flex-grow(1);
     }
 
@@ -101,7 +101,7 @@
         > .header.links {
             .lib-list-inline();
             float: right;
-            font-size: 0;
+            .lib-font-size(0);
             margin-left: auto;
             margin-right: @indent__base;
 
@@ -721,7 +721,7 @@
                 li {
                     background: transparent;
                     border: none;
-                    font-size: 14px;
+                    .lib-font-size(14);
                     margin: 0 0 8px;
                     padding: 0;
                 }

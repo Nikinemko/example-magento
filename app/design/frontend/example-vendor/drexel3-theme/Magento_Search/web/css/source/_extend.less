@@ -1,8 +1,8 @@
 & when (@media-common = true) {
   .form-under {
     min-width: 300px;
-    height: 40px;
-    margin-top: 20px;
+    height: @indent__xl;
+    margin-top: @indent__base;
     line-height: 43px;
     position: absolute;
     right: 7%;
@@ -27,7 +27,7 @@
 
   .block-search {
     position: inherit;
-    width: auto;
+    width: auto !important;  // overrides default fixed width of 300px in search block
     padding-left: 0;
     margin: 0;
   }

@@ -7,13 +7,13 @@ body {
   .description {
     color: @color-exampleproject-secondary;
     position: relative;
-    padding: 5px 0 25px;
-    margin-bottom: 25px;
+    padding: 5px 0 @indent__m;
+    margin-bottom: @indent__m;
   }
 
   .description::after {
     content: "";
-    width: 25px;
+    width: @indent__m;
     height: 3px;
     .lib-css(background, @color-exampleproject-softBlack);
     position: absolute;
@@ -24,7 +24,7 @@ body {
   .text-description {
     color: @color-exampleproject-secondary;
     letter-spacing: .25px;
-    margin-top: 10px;
+    margin-top: @indent__s;
   }
 
   .banner {
@@ -57,7 +57,7 @@ body {
 }
 .block-title {
   margin: 80px 0 60px;
-  font-size: 36px;
+  .lib-font-size(36);
 }
 
 .container {
@@ -104,7 +104,7 @@ body {
       padding-right: 0px;
       a {
         .lib-css(color, @color-exampleproject-softBlack);
-        padding: 5px;
+        padding: @indent__xs;
       }
     }
     .block {
@@ -120,16 +120,16 @@ body {
           letter-spacing: .25px;
           overflow: hidden;
           .lib-vendor-prefix-display(block);
-          color: #888 !important;
+          color: #888 !important;       // overrides footer <a> links
         }
         .title {
           .lib-vendor-prefix-display(flex);
           justify-content: space-between;
-          font-size: 16px;
+          .lib-font-size(16);
           padding-bottom: 0;
           letter-spacing: @exampleproject-letter-spacing;
           text-transform: uppercase;
-          font-weight: 500;
+          font-weight: @font-weight__heavier;
           line-height: 1;
           .lib-css(color, @color-exampleproject-softBlack);
         }
@@ -144,7 +144,7 @@ body {
 }
 
 .footer-copyright {
-  padding: 40px 0 0 0;
+  padding: @indent__xl 0 0 0;
   border-top: 1px solid #eee;
 }
 
@@ -159,13 +159,13 @@ body {
     list-style-type: none;
     text-align: center;
     >li{
-      margin: 0 20px 0 0;
+      margin: 0 @indent__base 0 0;
       color: #888;
       letter-spacing: 1px;
     }
   }
   .copy-links {
-    margin: 0 20px 0 0;
+    margin: 0 @indent__base 0 0;
     color: #888;
     letter-spacing: 1px;
     text-align: center;
@@ -195,7 +195,7 @@ body {
 }
 
 .slick-initialized .slick-slide {
-  margin: 20px;
+  margin: @indent__base;
 }
 
 .banner-container {
@@ -207,8 +207,8 @@ body {
 
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
    .extend-footer {
-     width: 30px;
-     height: 30px;
+     width: @indent__l;
+     height: @indent__l;
      text-align: center;
      background: #eee;
      cursor: pointer;
@@ -216,9 +216,9 @@ body {
 
   .extend-footer::after {
     content: '\f067';
-    font-family: FontAwesome;
-    font-size: 12px;
-    line-height: 30px;
+    font-family: @font-family-font-awesome;
+    .lib-font-size(14);
+    line-height: @indent__l;
   }
 
 }

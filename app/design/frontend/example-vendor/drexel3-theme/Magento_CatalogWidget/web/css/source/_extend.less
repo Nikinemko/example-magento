@@ -5,19 +5,19 @@
 
   .preview:before {
     .lib-css(color, @color-exampleproject-softBlack) !important;
-    font-family: 'FontAwesome' !important;
+    font-family: @font-family-font-awesome !important;            // changes specific element styles
     content: @icon-preview;
   }
 
   .wishlist:before {
     .lib-css(color, @color-exampleproject-softBlack) !important;
-    font-family: 'FontAwesome' !important;
+    font-family: @font-family-font-awesome !important;            // changes specific element styles
     content: @icon-wishlist-product;
   }
 
   .compare:before {
     .lib-css(color, @color-exampleproject-softBlack) !important;
-    font-family: 'FontAwesome' !important;
+    font-family: @font-family-font-awesome !important;           // changes specific element styles
     content: @icon-compare-product;
   }
 
@@ -29,7 +29,7 @@
   .product-btn-borders {
     background: 0 0;
     .lib-css(color, @color-exampleproject-softBlack);
-    border-bottom: 1px solid black !important;
+    border-bottom: 1px solid @color-exampleproject-primary !important;     // changes default button borders
     border: none;
     border-radius: 0px;
     text-transform: uppercase;
@@ -45,6 +45,6 @@
   }
 
   .products-row .product-item-info:hover .price-box {
-    display: none !important;
+    display: none !important;          // Hide price until hover
   }
 }

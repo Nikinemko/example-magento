@@ -6,7 +6,7 @@
   .price-container {
     .price {
       .lib-font-size(20);
-      font-weight: 900;
+      font-weight: @font-weight__heavy;
     }
   }
 }
@@ -44,14 +44,14 @@
 .products-table {
   .lib-vendor-prefix-display(flex);
   .block-title {
-    padding-bottom: 20px;
+    padding-bottom: @indent__base;
     border-bottom: 1px solid #eee;
   }
   .product-items {
     .lib-vendor-prefix-display(flex);
     .lib-vendor-prefix-flex-direction(column);
     .product-item {
-      margin: 0 0 20px;
+      margin: 0 0 @indent__base;
       .product-item-info {
         .lib-vendor-prefix-display(flex);
         .product-item-photo {
@@ -81,7 +81,7 @@
 }
 
 .slick-slide div .product-item {
-  width: 20% !important;
+  width: 20% !important;        //  adds fixed width of element in slider
 }
 
 .product-item .price-box .price-label {
@@ -92,7 +92,7 @@
   vertical-align: top;
   text-decoration: line-through;
   .lib-css(color, @color-exampleproject-softBlack);
-  font-size: 15px;
+  .lib-font-size(15);
   font-weight: normal;
 }
 

@@ -27,12 +27,12 @@
   li button {
     .lib-vendor-prefix-display(block);
     text-indent: -99999px;
-    border: 2px solid black;
+    border: 2px solid @color-exampleproject-primary;
     border-radius: 0;
-    height: 10px;
-    width: 10px;
+    height: @indent__s;
+    width: @indent__s;
     padding: 0;
-    margin: 0 10px 0 0;
+    margin: 0 @indent__s 0 0;
   }
   .slick-active button {
     .lib-css(background, @color-exampleproject-primary);
@@ -55,10 +55,10 @@
 .slick-prev {
   left: auto;
   right: 63px;
-  border-right: 1px solid black;
+  border-right: 1px solid @color-exampleproject-primary;
   border-radius: 0;
   width: 60px;
-  height: 20px;
+  height: @indent__base;
 }
 
 .slick-next {
@@ -78,7 +78,7 @@
 
 .slick-prev:focus, .slick-prev:hover {
   border: none;
-  border-right: 1px solid black;
+  border-right: 1px solid @color-exampleproject-primary;
   .lib-css(color, @color-exampleproject-softBlack);
   background: transparent;
 }
@@ -91,14 +91,14 @@ button.slick-prev {
 button.slick-prev::after {
   visibility: visible;
   position: absolute;
-  border-right: 1px solid black;
+  border-right: 1px solid @color-exampleproject-primary;
   width: 50px;
-  padding: 10px 5px 0 0;
-  height: 10px;
-  top: 40px;
+  padding: @indent__s 5px 0 0;
+  height: @indent__s;
+  top: @indent__xl;
   left: 0;
   .lib-css(letter-spacing, @exampleproject-letter-spacing);
-  font-weight: 300;
+  font-weight: @font-weight__light;
   content: "PREV";
 }
 
@@ -109,12 +109,12 @@ button.slick-next {
 button.slick-next::after {
   visibility: visible;
   position: absolute;
-  top: 40px;
+  top: @indent__xl;
   left: 0;
   padding-top: 10px;
   .lib-css(letter-spacing, @exampleproject-letter-spacing);
-  font-weight: 300;
+  font-weight: @font-weight__light;
   width: 60px;
-  height: 10px;
+  height: @indent__s;
   content: "NEXT";
 }

@@ -1,14 +1,14 @@
 & when (@media-common = true) {
   .blocks.newsletter {
     background: #f4f4f4;
-    padding: 30px 0;
+    padding: @indent__l 0;
 
     .container.subscription-container {
       .content {
         align-self: center;
 
         .form.subscribe {
-          margin: 20px;
+          margin: @indent__base;
 
           .field.newsletter {
             .control {
@@ -26,14 +26,14 @@
       }
 
       .title h2 {
-        margin-bottom: 5px;
+        margin-bottom: @indent__xs;
         letter-spacing: 2px;
       }
 
       .title {
         .label {
           color: #888;
-          font-size: 14px;
+          .lib-font-size(14);
         }
       }
     }

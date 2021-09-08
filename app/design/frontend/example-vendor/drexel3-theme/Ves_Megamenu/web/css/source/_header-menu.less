@@ -4,7 +4,7 @@
 
   .arm-chair > .submenu.dropdown-menu {
     width: 1320px;
-    left: -425px !important;
+    left: -425px !important;        //      overrides default position to create adaptive header drop-downs
   }
 
   .content-wrapper {
@@ -20,7 +20,7 @@
       }
       > p img {
         width: 100%;
-        margin: 30px;
+        margin: @indent__l;
       }
     }
   }
@@ -34,27 +34,27 @@
   .fixed {
     position: fixed;
     z-index: 999999;
-    background: rgba(255, 255, 255, 0.95) !important;
+    background: rgba(255, 255, 255, 0.95) !important;        // overrides default MegaMenu style and color
     box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
-    padding: 20px 15px 30px 0;
+    padding: @indent__base 15px @indent__l 0;
     transition: 0.6s;
     width: 100%;
   }
 
   .page-header {
-    padding: 40px 0;
+    padding: @indent__xl 0;
     border-bottom: none;
   }
 
   .arm-chair > .submenu.dropdown-menu {
     width: 900px;
-    left: -320px !important;
+    left: -320px !important;                                //      overrides default position to create adaptive header drop-downs
   }
 
   .item-sidebar {
     > p img {
       width: 40%;
-      margin-right: 20px;
+      margin-right: @indent__base;
     }
   }
 
@@ -79,28 +79,28 @@
 
   .fa-eyedropper:before {
     .lib-css(background, @color-exampleproject-light);
-    border-radius: 40px;
+    border-radius: @indent__xl;
     .lib-css(color, @color-exampleproject-primary);
     padding: 15px;
-    font-size: 20px;
+    .lib-font-size(20);
     content: @icon-pin;
   }
 
   .fa-gear:before, .fa-cog:before {
     .lib-css(background, @color-exampleproject-light);
-    border-radius: 40px;
+    border-radius: @indent__xl;
     .lib-css(color, @color-exampleproject-primary);
     padding: 15px;
-    font-size: 20px;
+    .lib-font-size(20);
     content: @icon-screw;
   }
 
   .fa-expand:before {
     .lib-css(background, @color-exampleproject-light);
-    border-radius: 40px;
+    border-radius: @indent__xl;
     .lib-css(color, @color-exampleproject-primary);
     padding: 15px;
-    font-size: 20px;
+    .lib-font-size(20);
     content: @icon-scale;
   }
 
@@ -124,13 +124,17 @@
   }
 
   a.nav-anchor.subitems-group {
-    font-weight: 600;
+    font-weight: @font-weight__semibold;
   }
 
   .custom-login {
-    .lib-css(color, @color-exampleproject-primary) !important;
-    font-size: @exampleproject-font-size;
-    font-weight: 300;
+    font-weight: @font-weight__light;
+    color: @color-exampleproject-primary !important;
+    text-decoration: none !important;
+  }
+
+  .custom-login:hover {
+    color: @color-exampleproject-secondary !important;
   }
 
   .top-block-menu {
@@ -150,28 +154,28 @@
   }
 
   .menu-title {
-    margin-bottom: 40px;
-    font-size: 16px;
+    margin-bottom: @indent__xl;
+    .lib-font-size(16);
     padding-bottom: 0;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: @font-weight__heavier;
     line-height: 1;
-    color: #ddd !important;
+    color: #ddd !important;                               // Overrides default header styles
     .lib-css(background, @color-exampleproject-softBlack);
   }
 
   .menu-title:hover {
-    background: 0 0 !important;
+    background: 0 0 !important;                           // Overrides default header styles
   }
 
   .navigation .level0 .submenu a {
-    color: #ddd !important;
+    color: #ddd !important;                               // Overrides default header styles
     .lib-css(background, @color-exampleproject-softBlack);
   }
 
   .navigation .level0 .submenu a:hover {
-    background: 0 0 !important;
+    background: 0 0 !important;                           // Overrides default header styles
   }
 
   .header.content {
@@ -187,7 +191,7 @@
     }
     .side-wrapper {
       .lib-vendor-prefix-display(flex);
-      margin-top: 10px;
+      margin-top: @indent__s;
       justify-content: space-evenly;
       flex: 1;
     }
@@ -203,7 +207,7 @@
   }
 
   .level1 > a {
-    font-size: 14px !important;
+    font-size: 14px !important;                   // Overrides default header styles
   }
 
   .fa {
@@ -211,9 +215,9 @@
   }
 
   .scroll-to-fixed-fixed{
-    background: rgba(255,255,255,.95) !important;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
-    padding: 20px 15px 0 0;
+    background: rgba(255,255,255,.95) !important;                 // Sets new default background for header
+    box-shadow: 0 0 @indent__xs 0 rgba(0, 0, 0, 0.2);
+    padding: @indent__base 15px 0 0;
     transition: 0.6s;
   }
 
@@ -234,13 +238,13 @@
   }
 
   #close-menu {
-    padding-top: 10px;
+    padding-top: @indent__s;
     margin-bottom: 15px;
     text-align: right;
   }
 
   #close-menu a i.fa-angle-left {
-    right: 20px;
+    right: @indent__base;
     position: absolute;
   }
 
@@ -250,17 +254,17 @@
   }
 
   #close-menu a i {
-    font-size: 20px;
-    font-weight: 500;
+    .lib-font-size(20);
+    font-weight: @font-weight__heavier;
   }
 
   .ves-megamenu > .navigation .nav-item > a {
-    color: #ddd !important;
+    color: #ddd !important;                             // Overrides default header styles
     border-bottom: 1px solid rgba(214,210,210,0.1);
   }
 
   .navigation li.level0:last-child {
-    border-bottom: none !important;
+    border-bottom: none !important;                     // Overrides default header styles
   }
 
   .item-header {
@@ -289,7 +293,7 @@
   .logo-wrapper {
     text-align: -webkit-center;
     border-bottom: 1px solid #eee;
-    padding-bottom: 20px;
+    padding-bottom: @indent__base;
     .logo {
       .lib-vendor-prefix-display(block);
       float: none;
@@ -298,30 +302,32 @@
   }
 
   .side-wrapper {
-    margin-top: 20px;
+    margin-top: @indent__base;
     .lib-vendor-prefix-display(flex);
     justify-content: flex-end;
       > div, a {
         .lib-css(color, @color-exampleproject-primary);
-        margin: 5px;
+        margin: @indent__xs;
       }
     .custom-login {
-      font-size: 0;
+      .lib-font-size(0);
     }
 
     .custom-login::after {
-      font-size: 15px;
+      .lib-font-size(15);
       content: @icon-login;
-      font-family: FontAwesome;
+      font-family: @font-family-font-awesome;
+      position: absolute;
+      margin: 0 0 0 -15px;
     }
     .minicart-wrapper .action.showcart {
       .lib-vendor-prefix-display(initial);
-      font-size: 0;
+      .lib-font-size(0);
     }
     .minicart-wrapper .action.showcart::after {
-      font-size: 15px;
+      .lib-font-size(15);
       content: @icon-mini-cart;
-      font-family: FontAwesome;
+      font-family: @font-family-font-awesome;
     }
   }
   .minicart-wrapper .action.showcart .modal-popup, .minicart-wrapper .action.showcart .text {
@@ -329,7 +335,7 @@
   }
 
   #close-menu {
-    padding-top: 10px;
+    padding-top: @indent__s;
     margin-bottom: 15px;
     text-align: right;
   }
@@ -351,7 +357,7 @@
     float: left;
     width: 100%;
     .nav-item>a {
-      color: #ddd !important;
+      color: #ddd !important;                           // Overrides default header styles
     }
   }
 }
