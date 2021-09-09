@@ -38,10 +38,10 @@ $_imageHover = 'hover_product_list';
         $showDescription = false;
         $templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::SHORT_VIEW;
     } else {
-        $viewMode = 'list';
-        $imageDisplayArea = 'category_page_list';
-        $showDescription = true;
-        $templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::FULL_VIEW;
+        $viewMode = 'grid';
+        $imageDisplayArea = 'category_page_grid';
+        $showDescription = false;
+        $templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::SHORT_VIEW;
     }
     /**
      * Position for actions regarding image size changing in vde if needed
