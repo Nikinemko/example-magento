@@ -18,6 +18,10 @@ and (max-width: 767px) {
   }
 
 }
+.navigation .level0.active>a:not(.ui-state-active), .navigation .level0.has-active>a:not(.ui-state-active) {
+  border-color: @color-exampleproject-softBlack !important;
+}
+
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
 
