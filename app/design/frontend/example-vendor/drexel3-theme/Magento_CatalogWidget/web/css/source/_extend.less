@@ -35,7 +35,22 @@
     text-transform: uppercase;
   }
 
+  .catalog-product-btn-borders {
+    background: 0 0;
+    .lib-css(color, @color-exampleproject-softBlack);
+    border-bottom: 1px solid @color-exampleproject-primary !important;     // changes default button borders
+    border: none;
+    border-radius: 0px;
+    text-transform: uppercase;
+  }
+
   .product-btn-borders:hover {
+    background: 0 0;
+    border: 0;
+  }
+
+
+  .catalog-product-btn-borders:hover {
     background: 0 0;
     border: 0;
   }
@@ -46,5 +61,31 @@
 
   .products-row .product-item-info:hover .price-box {
     display: none !important;          // Hide price until hover
+  }
+
+  .catalog-widget-btn:hover > .product .details .product-item-details > .price-box {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width:639px) {
+  .catalog-product-btn {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 999999999;
+    top: 88%;
+    background: #fff;
+  }
+}
+
+@media screen and (max-width:640px) {
+  .catalog-product-btn {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    z-index: 999999999;
+    background: #fff;
+    top: 92%;
   }
 }
