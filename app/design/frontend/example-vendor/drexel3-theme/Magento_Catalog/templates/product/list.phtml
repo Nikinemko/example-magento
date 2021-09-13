@@ -126,6 +126,9 @@ $_imageHover = 'hover_product_list';
                                             'product-item-info_' . $_product->getId() . ' div.actions-primary'
                                         ) : '' ?>
                                     <div data-role="add-to-links" class="actions-secondary">
+                                        <a href="<?= $block->escapeUrl($block->getProductUrl($_product)) ?>" class="action preview">
+                                            <span></span>
+                                        </a>
                                         <?php if ($addToBlock = $block->getChildBlock('addto')): ?>
                                             <?= $addToBlock->setProduct($_product)->getChildHtml() ?>
                                         <?php endif; ?>
