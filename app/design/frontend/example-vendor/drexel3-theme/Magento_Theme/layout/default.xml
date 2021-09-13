@@ -17,6 +17,9 @@
                 </arguments>
             </block>
         </referenceBlock>
+        <referenceContainer name="footer-container">
+            <block class="Magento\Framework\View\Element\Template" name="footer.mobile" template="Magento_Cms::footerMobile.phtml"/>
+        </referenceContainer>
     </body>
 </page>
 

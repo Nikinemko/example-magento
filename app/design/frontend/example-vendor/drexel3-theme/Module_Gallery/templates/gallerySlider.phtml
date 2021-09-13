@@ -2,7 +2,18 @@
 {
     ".gallery-slider": {
         "slick": {
-            "slidesToShow": 1
+            "slidesToShow": 2,
+            "dots": true,
+            "infinite": true,
+            "dotsClass": "bannerSliderButton",
+            "responsive": [
+            {
+              "breakpoint": 768,
+              "settings": {
+                "slidesToShow": 1
+              }
+            }
+          ]
         }
     }
 }
