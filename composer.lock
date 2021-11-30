@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c42edfc53a803f5ac8ea8c6c32243e82",
+    "content-hash": "4f5bf0ff2735d68e8b8093da8dfe6d27",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -17870,6 +17870,47 @@
                 "phar"
             ],
             "time": "2020-07-07T18:42:57+00:00"
+        },
+        {
+            "name": "snowdog/module-cms-api",
+            "version": "1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SnowdogApps/magento2-cms-api.git",
+                "reference": "7894497be6b0467aba67df121878a45d55b99490"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SnowdogApps/magento2-cms-api/zipball/7894497be6b0467aba67df121878a45d55b99490",
+                "reference": "7894497be6b0467aba67df121878a45d55b99490",
+                "shasum": ""
+            },
+            "require": {
+                "magento/framework": "101.0.*|102.0.*|103.0.*",
+                "magento/module-cms": "102.0.*|103.0.*|104.0.*",
+                "php": "7.0.2|7.0.4|~7.0.6|~7.1.0|~7.2.0|~7.3.0|~7.4.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Snowdog\\CmsApi\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jose Ortega",
+                    "email": "jose.ortega@snow.dog"
+                }
+            ],
+            "description": "Custom CMS API endpoints which retrieves CMS pages and blocks filtered",
+            "time": "2020-09-24T08:02:57+00:00"
         },
         {
             "name": "spomky-labs/otphp",

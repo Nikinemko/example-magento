@@ -14,7 +14,8 @@
     "require": {
         "magento/composer-root-update-plugin": "~1.1",
         "magento/product-community-edition": "2.4.2-p1",
-        "markshust/magento2-module-disabletwofactorauth": "^1.1"
+        "markshust/magento2-module-disabletwofactorauth": "^1.1",
+        "snowdog/module-cms-api": "^1.10"
     },
     "autoload": {
         "exclude-from-classmap": [
